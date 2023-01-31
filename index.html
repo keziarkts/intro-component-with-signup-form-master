@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main-content">
+    <div class="column text-content">
+      <h1 class="big-title">Learn to code by watching others</h1>
+
+      <p class="paragraph">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable.</p>
+    </div>
+     
+    <div class="column form-content">
+      <button class="btn btn-try">Try it free 7 days <span class="not-bold">then $20/mo. thereafter</span></button>
+
+      <div class="form-card">
+        <form name="myForm" id="validation-form" action="" onsubmit="return validateForm()" method="POST">
+          <div class="item">
+            <input type="text" id="first-name" name="fname" placeholder="First Name">
+            <div class="error" id="fnameErr"></div>
+          </div>
+          <div class="item">
+            <input type="text" id="last-name" name="lname" placeholder="Last Name">
+            <div class="error" id="lnameErr"></div>
+          </div> 
+          <div class="item">
+            <input type="text" id="email" name="email" placeholder="Email Address">
+            <div class="error" id="emailErr"></div>
+          </div> 
+          <div class="item">
+            <input type="password" id="pwd" name="pwd" placeholder="Password">
+            <div class="error" id="pwdErr"></div>
+          </div>
+          <div class="item">
+            <button type="submit" class="btn-claim">CLAIM YOUR FREE TRIAL</button>
+          </div>
+        </form>
+        
+        <p class="ts-text">By clicking the button, you are agreeing to our <a class="ts-link" href="#">Terms and Services</a></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+<!-- link to JAVASCRIPT Help :
+https://www.javascripttutorial.net/javascript-dom/javascript-form/ -->
